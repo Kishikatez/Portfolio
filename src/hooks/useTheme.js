@@ -5,7 +5,7 @@ const STORAGE_KEY = 'kishore-portfolio-theme';
 export function useTheme() {
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') {
-      return 'dark';
+      return 'light';
     }
 
     const storedTheme = window.localStorage.getItem(STORAGE_KEY);
@@ -13,7 +13,7 @@ export function useTheme() {
       return storedTheme;
     }
 
-    return window.matchMedia?.('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    return 'light';
   });
 
   useEffect(() => {

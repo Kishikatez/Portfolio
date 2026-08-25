@@ -3,8 +3,8 @@ import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles } from 'lucide-r
 import { motion, useReducedMotion } from 'framer-motion';
 import { siteConfig } from '../data/site';
 
-const rotatingTitles = ['Full-Stack Applications', 'AI-Powered Systems', 'IoT Solutions', 'Embedded Projects'];
-const techBadges = ['Python', 'ESP32', 'FastAPI', 'Docker', 'PostgreSQL', 'AI', 'Arduino'];
+const rotatingTitles = ['Full-Stack Applications', 'AI-Powered Products', 'Reliable Backend Systems', 'Client-Focused Web Experiences'];
+const techBadges = ['Python', 'React', 'FastAPI', 'Docker', 'PostgreSQL', 'AI', 'APIs'];
 
 export function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -35,8 +35,8 @@ export function Hero() {
 
   const focusBars = useMemo(
     () => [
-      { label: 'IoT & Embedded Systems', value: siteConfig.focusRatio.hardware },
       { label: 'Software, Full-Stack & AI', value: siteConfig.focusRatio.software },
+      { label: 'IoT & Embedded Systems', value: siteConfig.focusRatio.hardware },
     ],
     []
   );
@@ -47,14 +47,14 @@ export function Hero() {
         <div className="relative z-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-400/10 px-4 py-2 text-xs font-medium text-cyan-100 backdrop-blur-sm">
             <Sparkles className="h-4 w-4 text-cyan-300" />
-            Available for software, AI, IoT, embedded, and freelance opportunities
+            Available for software, AI, full-stack, and freelance opportunities
           </div>
 
           <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Hi, I&apos;m <span className="bg-gradient-to-r from-cyan-300 via-white to-fuchsia-300 bg-clip-text text-transparent">Kishore.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-2xl font-medium leading-tight text-slate-100 sm:text-3xl lg:text-[2.75rem] lg:leading-[1.05]">
-            I Build Intelligent Software, IoT & Embedded Systems.
+            I build software that makes complex work feel simple.
           </p>
 
           <div className="mt-5 flex min-h-10 items-center gap-3 text-base text-slate-300 sm:text-lg">
@@ -156,7 +156,7 @@ export function Hero() {
                   <div className="rounded-2xl border border-white/10 bg-base-950/80 p-4">
                     <p className="font-mono text-xs uppercase tracking-[0.35em] text-slate-400">Active Stack</p>
                     <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
-                      {['FastAPI', 'PostgreSQL', 'ESP32', 'Qdrant', 'Docker', 'Ollama'].map((item) => (
+                      {['React', 'FastAPI', 'PostgreSQL', 'Qdrant', 'Docker', 'Ollama'].map((item) => (
                         <div key={item} className="rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-center text-slate-100">
                           {item}
                         </div>
@@ -166,7 +166,7 @@ export function Hero() {
                   <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-400/10 to-fuchsia-500/10 p-4">
                     <p className="font-mono text-xs uppercase tracking-[0.35em] text-cyan-200/80">System Focus</p>
                     <p className="mt-3 text-sm leading-7 text-slate-300">
-                      Engineering-focused portfolio blending embedded control, practical AI, secure software, and self-hosted infrastructure.
+                      Software-first engineering across product interfaces, APIs, data, AI workflows, and deployment.
                     </p>
                   </div>
                 </div>

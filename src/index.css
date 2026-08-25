@@ -19,6 +19,39 @@
     background-image: radial-gradient(circle at top, rgba(14, 165, 233, 0.1), transparent 28%), radial-gradient(circle at right, rgba(168, 85, 247, 0.07), transparent 22%), linear-gradient(180deg, rgba(248, 250, 252, 1), rgba(241, 245, 249, 1));
   }
 
+  html:not(.dark) .text-white {
+    color: rgb(15 23 42);
+  }
+
+  html:not(.dark) .text-slate-100,
+  html:not(.dark) .text-slate-200,
+  html:not(.dark) .text-slate-300 {
+    color: rgb(51 65 85);
+  }
+
+  html:not(.dark) .text-slate-400 {
+    color: rgb(100 116 139);
+  }
+
+  html:not(.dark) .border-white\/10 {
+    border-color: rgb(226 232 240 / 0.9);
+  }
+
+  html:not(.dark) .bg-white\/5,
+  html:not(.dark) .bg-white\/\[0\.03\] {
+    background-color: rgb(255 255 255 / 0.72);
+  }
+
+  html:not(.dark) .bg-base-950\/70,
+  html:not(.dark) .bg-base-950\/80,
+  html:not(.dark) .bg-base-900\/80 {
+    background-color: rgb(248 250 252 / 0.92);
+  }
+
+  html:not(.dark) .bg-white\/10 {
+    background-color: rgb(226 232 240 / 0.8);
+  }
+
   ::selection {
     background: rgba(34, 211, 238, 0.3);
     color: #fff;

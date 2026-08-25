@@ -5,7 +5,7 @@ import { SkillCard } from './SkillCard';
 import { skillCategories } from '../data/skills';
 
 export function Skills() {
-  const [selectedCategoryId, setSelectedCategoryId] = useState('iot');
+  const [selectedCategoryId, setSelectedCategoryId] = useState('web');
   const selectedCategory = useMemo(
     () => skillCategories.find((category) => category.id === selectedCategoryId) ?? skillCategories[0],
     [selectedCategoryId]
@@ -16,8 +16,8 @@ export function Skills() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Technical Skills"
-          title="A toolset built across embedded, software, AI, and deployment"
-          description="The portfolio is intentionally balanced toward hardware-first engineering, while still showing the software depth required to ship complete products."
+          title="A software toolkit for building useful products"
+          description="My core work centers on application development, backend systems, AI workflows, and the infrastructure that keeps products dependable. IoT and embedded systems complement that software foundation."
         />
 
         <div className="mt-10 grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">

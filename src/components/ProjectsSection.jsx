@@ -20,8 +20,8 @@ export function ProjectsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Featured Projects"
-          title="Projects that connect software, AI, and hardware"
-          description="The collection is organized around practical systems rather than student-style demos, with the most important work centered on private cloud AI, embedded robotics, and real client applications."
+          title="Software projects with real-world purpose"
+          description="The collection leads with full-stack applications, AI systems, APIs, and client work. IoT and embedded projects show how that software thinking extends into connected devices."
         />
 
         <div className="mt-8 flex flex-wrap gap-3">

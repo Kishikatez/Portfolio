@@ -1,13 +1,13 @@
 export const siteConfig = {
   name: 'Kishore S',
-  headline: 'Software Developer | IoT & Embedded Systems Engineer | Full-Stack & AI Developer',
+  headline: 'Software Developer | Full-Stack & AI Developer | IoT Engineer',
   summary:
-    'I am a Computer Science graduate and technology enthusiast with hands-on experience in building full-stack applications, AI-powered document systems, IoT prototypes, embedded systems, automation solutions, and client projects.',
+    'I am a Computer Science graduate focused on building full-stack applications, AI-powered products, reliable APIs, and client-ready digital experiences, with additional experience in IoT and embedded systems.',
   description:
-    'I build practical technology solutions by combining software development, embedded systems, artificial intelligence, and modern web technologies.',
+    'I turn complex ideas into useful software through thoughtful interfaces, dependable backend systems, practical AI, and modern web technologies.',
   focusRatio: {
-    hardware: 70,
-    software: 30,
+    hardware: 20,
+    software: 80,
   },
   ctas: {
     projects: '#projects',
@@ -27,8 +27,8 @@ export const siteConfig = {
     username: 'YOUR_GITHUB_USERNAME',
   },
   seo: {
-    title: 'Kishore S | Software, AI, IoT & Embedded Systems Developer',
+    title: 'Kishore S | Software, Full-Stack & AI Developer',
     description:
-      'Portfolio of Kishore S — a developer building full-stack applications, AI-powered systems, IoT solutions, embedded projects, and self-hosted technology platforms.',
+      'Portfolio of Kishore S — a software developer building full-stack applications, AI-powered systems, dependable APIs, and practical digital products.',
   },
 };

@@ -16,7 +16,7 @@ export function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="About Me"
-          title="Building software and hardware that work together"
+          title="Building software people can rely on"
           description={siteConfig.summary}
         />
 
@@ -29,13 +29,13 @@ export function About() {
             className="glass-card p-6 sm:p-8"
           >
             <p className="text-base leading-8 text-slate-300 sm:text-lg">
-              I am a technology-focused developer with experience across software development, full-stack engineering, artificial intelligence, IoT, and embedded systems.
+              I am a software-focused developer with experience across full-stack engineering, artificial intelligence, backend systems, and modern web development.
             </p>
             <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">
-              I enjoy working across the complete technology stack. On the software side, I build backend APIs, web applications, databases, AI-powered systems, and self-hosted platforms. On the hardware side, I experiment with microcontrollers, sensors, robotics, automation, and IoT communication.
+              I enjoy taking a product from a clear idea to a working system: shaping the interface, designing APIs, modeling data, integrating AI, and deploying software that is practical to use and maintain.
             </p>
             <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">
-              I am particularly interested in projects where software and hardware work together to solve real-world problems.
+              I also bring hands-on IoT and embedded experience when a product needs to connect software with the physical world.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -70,19 +70,19 @@ export function About() {
               <div>
                 <div className="flex items-center justify-between text-sm text-slate-200">
                   <span>IoT & Embedded Systems</span>
-                  <span>70%</span>
+                  <span>{siteConfig.focusRatio.hardware}%</span>
                 </div>
                 <div className="mt-2 h-3 rounded-full bg-white/10">
-                  <div className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500" style={{ width: '70%' }} />
+                  <div className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-fuchsia-500" style={{ width: `${siteConfig.focusRatio.hardware}%` }} />
                 </div>
               </div>
               <div>
                 <div className="flex items-center justify-between text-sm text-slate-200">
                   <span>Software, Full-Stack & AI</span>
-                  <span>30%</span>
+                  <span>{siteConfig.focusRatio.software}%</span>
                 </div>
                 <div className="mt-2 h-3 rounded-full bg-white/10">
-                  <div className="h-full rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-cyan-400" style={{ width: '30%' }} />
+                  <div className="h-full rounded-full bg-gradient-to-r from-fuchsia-500 via-blue-500 to-cyan-400" style={{ width: `${siteConfig.focusRatio.software}%` }} />
                 </div>
               </div>
             </div>
