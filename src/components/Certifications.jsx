@@ -29,12 +29,12 @@ export function Certifications() {
                 <p className="mt-2 text-sm text-slate-300">{item.issuer}</p>
               </div>
               <div className="mt-4 space-y-3 text-sm text-slate-300">
-                <p><span className="text-slate-400">Credential ID:</span> {item.credentialId}</p>
-                <p><span className="text-slate-400">Verify:</span> {item.verifyLink}</p>
+                {item.credentialId && !item.credentialId.includes('PLACEHOLDER') ? <p><span className="text-slate-400">Credential ID:</span> {item.credentialId}</p> : null}
+                {item.verifyLink && !item.verifyLink.includes('PLACEHOLDER') ? <p><span className="text-slate-400">Verify:</span> {item.verifyLink}</p> : null}
               </div>
               <div className="mt-5 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs text-slate-300">
-                <span>Certificate image placeholder</span>
-                <ExternalLink className="h-4 w-4" />
+                <span>{item.image ? 'View certificate' : 'Certificate image unavailable'}</span>
+                {item.image ? <ExternalLink className="h-4 w-4" /> : null}
               </div>
             </motion.article>
           ))}

@@ -43,7 +43,9 @@ export function Contact() {
     }
 
     if (!siteConfig.contact.endpoint || siteConfig.contact.endpoint.startsWith('YOUR_')) {
-      setStatus('configure');
+      const subject = encodeURIComponent(formData.subject);
+      const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`);
+      window.location.href = `mailto:${siteConfig.socials.email}?subject=${subject}&body=${body}`;
       return;
     }
 

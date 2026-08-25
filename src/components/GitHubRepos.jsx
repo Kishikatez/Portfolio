@@ -48,7 +48,7 @@ export function GitHubRepos() {
         <SectionHeading
           eyebrow="Code & Experiments"
           title="Open-source style work and GitHub-ready experiments"
-          description="If a GitHub username is configured later, this section can fetch public repositories automatically without changing the layout."
+          description="A live view of my public repositories, refreshed directly from GitHub."
         />
 
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -89,7 +89,6 @@ export function GitHubRepos() {
         </div>
 
         {loading ? <p className="mt-6 text-sm text-slate-400">Fetching public repositories...</p> : null}
-        {!hasConfiguredUsername ? <p className="mt-6 text-sm text-slate-400">GitHub username is still a placeholder, so curated experiment cards are shown instead.</p> : null}
       </div>
     </section>
   );

@@ -55,24 +55,18 @@ export function ProjectCard({ project }) {
               View Details
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10"
-            >
-              <Github className="h-4 w-4" />
-              GitHub
-            </a>
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Live Demo
-            </a>
+            {project.github && !project.github.startsWith('YOUR_') ? (
+              <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10">
+                <Github className="h-4 w-4" />
+                GitHub
+              </a>
+            ) : null}
+            {project.demo && !project.demo.startsWith('YOUR_') ? (
+              <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-white/10">
+                <ExternalLink className="h-4 w-4" />
+                Live Demo
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
