@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, Github, Linkedin, Mail } from 'lucide-react';
+import { Send, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SectionHeading } from './SectionHeading';
 import { siteConfig } from '../data/site';
@@ -125,6 +125,7 @@ export function Contact() {
               <a href={siteConfig.socials.github} target="_blank" rel="noreferrer" className="contact-link"><Github className="h-4 w-4" /> GitHub</a>
               <a href={siteConfig.socials.linkedin} target="_blank" rel="noreferrer" className="contact-link"><Linkedin className="h-4 w-4" /> LinkedIn</a>
               <a href={`mailto:${siteConfig.socials.email}`} className="contact-link"><Mail className="h-4 w-4" /> Email</a>
+              <a href={`tel:${siteConfig.socials.phone}`} className="contact-link"><Phone className="h-4 w-4" /> {siteConfig.socials.phone}</a>
             </div>
 
             <div className="mt-8 rounded-3xl border border-white/10 bg-base-950/60 p-5">

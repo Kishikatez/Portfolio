@@ -17,7 +17,8 @@ export const siteConfig = {
   socials: {
     github: 'https://github.com/Kishikatez',
     linkedin: 'https://www.linkedin.com/in/kishore-s-3-14-17az/',
-    email: 'YOUR_EMAIL',
+    email: 'kishore0502s@gmail.com',
+    phone: '7092020502',
   },
   contact: {
     endpoint: 'YOUR_CONTACT_API_ENDPOINT',
