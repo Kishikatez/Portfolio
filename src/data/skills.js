@@ -1,0 +1,51 @@
+export const skillCategories = [
+  {
+    id: 'programming',
+    title: 'Programming Languages',
+    emphasis: 'medium',
+    description: 'Core languages used across embedded, backend, and application work.',
+    skills: ['Python', 'Java', 'JavaScript', 'C++', 'C', 'SQL'],
+  },
+  {
+    id: 'web',
+    title: 'Web Development',
+    emphasis: 'medium',
+    description: 'Frontend, backend, APIs, and responsive interfaces.',
+    skills: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'React', 'FastAPI', 'REST APIs', 'Jinja Templates', 'Responsive Web Design'],
+  },
+  {
+    id: 'backend',
+    title: 'Backend & Databases',
+    emphasis: 'medium',
+    description: 'Application logic, data models, access control, and persistence.',
+    skills: ['FastAPI', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQL', 'Authentication Systems', 'Role-Based Access Control', 'Session Management', 'Password Hashing', 'API Development'],
+  },
+  {
+    id: 'ai',
+    title: 'AI & Intelligent Systems',
+    emphasis: 'medium',
+    description: 'Document intelligence, semantic retrieval, and local LLM workflows.',
+    skills: ['Ollama', 'Mistral', 'Large Language Models', 'RAG', 'Semantic Search', 'Qdrant Vector Database', 'Document Processing', 'Text Extraction', 'AI Chatbots', 'AI Summarization', 'Gemini API / AI Integration'],
+  },
+  {
+    id: 'iot',
+    title: 'IoT & Embedded Systems',
+    emphasis: 'high',
+    description: 'Hands-on hardware, control systems, sensors, and device communication.',
+    skills: ['ESP32', 'Arduino', 'Raspberry Pi Pico', 'Arduino IDE', 'Embedded C / Microcontroller Programming', 'Sensors', 'Ultrasonic Sensors', 'DHT11', 'BMP280', 'MPU6050', 'Soil Moisture Sensors', 'Servo Motors', 'DC Motors', 'Motor Drivers', 'L298N', 'MQTT', 'IoT Communication', 'Robotics', 'Sensor Integration', 'Hardware Debugging', 'Power Management'],
+  },
+  {
+    id: 'devops',
+    title: 'DevOps & Infrastructure',
+    emphasis: 'medium',
+    description: 'Containerization, deployment, local infrastructure, and networking.',
+    skills: ['Docker', 'Docker Compose', 'Git', 'GitHub', 'Linux', 'MinIO', 'Self-Hosted Applications', 'Environment Configuration', '.env Management', 'Networking', 'LAN Deployment', 'ngrok'],
+  },
+  {
+    id: 'tools',
+    title: 'Tools',
+    emphasis: 'low',
+    description: 'Daily tools used to ship and debug practical solutions.',
+    skills: ['VS Code', 'Postman', 'Git', 'GitHub', 'Docker', 'Arduino IDE', 'Android Studio', 'PostgreSQL', 'Linux'],
+  },
+];

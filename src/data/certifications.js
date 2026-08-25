@@ -1,0 +1,38 @@
+export const certifications = [
+  {
+    id: 'nasscom-dfir',
+    title: 'NASSCOM DFIR — Gold Category Certification',
+    issuer: 'NASSCOM',
+    credentialId: 'CREDENTIAL_ID_PLACEHOLDER',
+    verifyLink: 'VERIFY_LINK_PLACEHOLDER',
+    image: '',
+    category: 'Cybersecurity',
+  },
+  {
+    id: 'full-stack',
+    title: 'Full Stack Web Developer Certification',
+    issuer: 'Certification Provider',
+    credentialId: 'CREDENTIAL_ID_PLACEHOLDER',
+    verifyLink: 'VERIFY_LINK_PLACEHOLDER',
+    image: '',
+    category: 'Web Development',
+  },
+  {
+    id: 'nptel-ba',
+    title: 'NPTEL Business Analyst Certification',
+    issuer: 'NPTEL',
+    credentialId: 'CREDENTIAL_ID_PLACEHOLDER',
+    verifyLink: 'VERIFY_LINK_PLACEHOLDER',
+    image: '',
+    category: 'Analytics',
+  },
+  {
+    id: 'cyber-foundation',
+    title: 'Cybersecurity Foundation Certification',
+    issuer: 'Certification Provider',
+    credentialId: 'CREDENTIAL_ID_PLACEHOLDER',
+    verifyLink: 'VERIFY_LINK_PLACEHOLDER',
+    image: '',
+    category: 'Cybersecurity',
+  },
+];

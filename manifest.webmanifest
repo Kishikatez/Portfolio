@@ -1,9 +1,0 @@
-{
-  "name": "Future 3D Experience",
-  "short_name": "Future3D",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#050816",
-  "theme_color": "#050816",
-  "icons": []
-}
