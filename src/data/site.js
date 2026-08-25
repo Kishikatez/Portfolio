@@ -11,12 +11,12 @@ export const siteConfig = {
   },
   ctas: {
     projects: '#projects',
-    resume: '/Full%20Stack%20Developer.pdf',
+    resume: 'https://drive.google.com/file/d/1cwsZjb98rq8JlbcWUvZ8NR8z9NZBJ-a2/view?usp=sharing',
     contact: '#contact',
   },
   socials: {
-    github: 'YOUR_GITHUB_URL',
-    linkedin: 'YOUR_LINKEDIN_URL',
+    github: 'https://github.com/Kishikatez',
+    linkedin: 'https://www.linkedin.com/in/kishore-s-3-14-17az/',
     email: 'YOUR_EMAIL',
   },
   contact: {
@@ -24,7 +24,7 @@ export const siteConfig = {
     service: 'YOUR_FORM_SERVICE',
   },
   github: {
-    username: 'YOUR_GITHUB_USERNAME',
+    username: 'Kishikatez',
   },
   seo: {
     title: 'Kishore S | Software, Full-Stack & AI Developer',
